@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    img {
+        height:80vh;
+    }
+
+    .slidercontainer{
+        text-align: center;
+        color: white;
+        display: table;
+        height: 100%;
+    }
+
+    .arrows{
+        font-size: 25px;
+        width: 5vw;
+        margin: 0;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .showSlide{
+        width: 90vw;
+    }
+    body{
+        background-color: darkcyan;
+    }
+    </style>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="slideshow.css">
+</head>
+<body>
+    <div class="title">
+        Bunny Page
+    </div>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a class="active" href="slides.html">Gallery</a>
+    </div>
+    <div class="slidercontainer">  
+        <div class="arrows">
+            <a class="left" onclick="nextSlide(-1)">❮</a>  
+        </div>
+
+        <div class="showSlide fade">  
+            <img src="images/img1.jpg" />  
+            <div class="content">Bunny on a photoshoot</div>  
+        </div>  
+        <div class="showSlide fade">  
+            <img src="images/img2.jpg"/>  
+            <div class="content">Bunny with it's tounge out</div>  
+        </div>  
+  
+        <div class="showSlide fade">  
+            <img src="images/img3.jpg"/>  
+            <div class="content">Bunny on a mug</div>  
+        </div>  
+        <div class="showSlide fade">  
+            <img src="images/img4.jpg"/>  
+            <div class="content">Bunny with a flower crown</div>  
+        </div>  
+        <div class="showSlide fade">  
+            <img src="images/img5.jpg"/>  
+            <div class="content">Clapping bunny</div>  
+        </div>  
+        <div class="showSlide fade">  
+            <img src="images/img6.jpg"/>  
+            <div class="content">Two bunnies</div>  
+        </div>  
+        <div class="showSlide fade">  
+            <img src="images/img7.jpg"/>  
+            <div class="content">Bunny</div>  
+        </div>  
+        
+        <div class="arrows">
+        <a class="right" onclick="nextSlide(1)">❯</a>  
+        </div> 
+    </div>  
+    <script src="slideshow.js"></script>
+</body>
+</html>
